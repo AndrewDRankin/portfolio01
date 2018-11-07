@@ -1,7 +1,27 @@
+.container {
+    padding: 10px;
+}
+
 body {
     background: brown;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .textBackground {
     color: white;
+}
+
+.tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tiles div {
+    width:90%;
+}
+
+img {
+    width: 100%;
 }
