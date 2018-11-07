@@ -1,5 +1,12 @@
 .container {
     padding: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.container {
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 body {
@@ -16,12 +23,15 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .tiles div {
     width:90%;
+    transition: all .8s ease-in-out .2s;
 }
 
 img {
     width: 100%;
+    transition: all .8s ease-in-out .2s;
 }
