@@ -1,22 +1,24 @@
-.container {
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.container {
-    opacity: 1;
-    transition: opacity 1s;
-}
-
 body {
-    background: brown;
+    background-color: rgb(160, 45, 50);
     font-family: 'Montserrat', sans-serif;
 
 }
 
+.container {
+    padding: 10px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+header {
+    margin: 20px;
+}
+
 .textBackground {
     color: white;
+    text-align: center;
 }
 
 .tiles {
@@ -24,6 +26,26 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    animation: reveal 2.25s ease 1;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+        width: 90%;
+    }
+    20% {
+        opacity: 0;
+    }
+    70% {
+        margin-top: 0px;
+        width: 100%;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .tiles div {
@@ -34,4 +56,40 @@ body {
 img {
     width: 100%;
     transition: all .8s ease-in-out .2s;
+}
+
+body {
+    animation-name: onload;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes onload {
+    0% {
+        background-color: rgb(160, 45, 50);
+    }
+    25% {
+        background-color: rgb(25, 70, 70);
+    }
+    100% {
+        background-color: rgb(12, 30, 35);
+    }
+}
+
+.textBackground p {
+    animation: swoop 2s ease 1;
+}
+
+@keyframes swoop {
+    0% {
+        transform: rotate(0.01turn) translate(-400px);
+    }
+    100% {
+        transform: rotate(0turn) translate(0px);
+    }
 }
