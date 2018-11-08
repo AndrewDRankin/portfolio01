@@ -95,15 +95,24 @@ body {
 }
 
 .swoop {
-    animation: swoop 2s ease 1;
+    animation: swoop 2s linear 1;
 }
 
 @keyframes swoop {
     0% {
-        transform: rotate(0.01turn) translateX(-400px);
+        transform: rotate(0.01turn) translateX(-400px) translateY(-10px);
+    }
+    80% {
+        transform: rotate(0.01turn) translateX(0px) translateY(-10px);
+    }
+    85% {
+        transform: skewX(-20deg)
+    }
+    86% {
+        transform: skewX(-20deg)
     }
     100% {
-        transform: rotate(0turn) translateX(0px);
+        transform: rotate(0turn) translateX(0px) translateY(0px) skewX(0deg, 0deg);
     }
 }
 
