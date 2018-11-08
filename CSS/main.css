@@ -26,6 +26,10 @@ section {
     text-align: center;
 }
 
+.textBackground p {
+    padding: 20px 0;
+}
+
 .tiles {
     display: flex;
     flex-direction: row;
