@@ -6,6 +6,7 @@ body {
 
 .container {
     padding: 10px;
+    margin: 20px;
 }
 
 main {
@@ -14,6 +15,10 @@ main {
 
 header {
     margin: 20px;
+}
+
+section {
+    padding: 20px;
 }
 
 .textBackground {
@@ -30,7 +35,7 @@ header {
     animation: reveal 2.25s ease 1;
 }
 
-@keyframes reveal {
+/* @keyframes reveal {
     0% {
         opacity: 0;
         margin-top: -20px;
@@ -46,11 +51,15 @@ header {
     100% {
         opacity: 1;
     }
-}
+} */
 
 .tiles div {
     width:90%;
     transition: all .8s ease-in-out .2s;
+}
+
+.skills div {
+    padding: 20px;
 }
 
 img {
@@ -81,15 +90,32 @@ body {
     }
 }
 
-.textBackground p {
+.swoop {
     animation: swoop 2s ease 1;
 }
 
 @keyframes swoop {
     0% {
-        transform: rotate(0.01turn) translate(-400px);
+        transform: rotate(0.01turn) translateX(-400px);
     }
     100% {
-        transform: rotate(0turn) translate(0px);
+        transform: rotate(0turn) translateX(0px);
+    }
+}
+
+.skills {
+    margin-top: 50px;
+    opacity: 0;
+    animation: skills 1.7s ease 2.3s 1 forwards;
+}
+
+@keyframes skills {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
