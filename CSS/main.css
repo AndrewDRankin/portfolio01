@@ -59,8 +59,15 @@ section {
 
 .tiles div {
     width:90%;
-    transition: all .8s ease-in-out .2s;
+    border: solid 1px rgb(0, 0, 0, 0,);
+    /* transition: width .8s ease-in-out .2s;
+    transition: border .2s; */
 }
+
+/* .tiles div:hover {
+    border: solid 1px white;
+    transition: border .2s;
+} */
 
 .skills div {
     padding: 20px;
@@ -94,25 +101,43 @@ body {
     }
 }
 
-.swoop {
-    animation: swoop 2s linear 1;
+.swoop p:first-of-type {
+    animation: swoop 1.7s linear 1;
 }
 
 @keyframes swoop {
     0% {
-        transform: rotate(0.01turn) translateX(-400px) translateY(-10px);
+        opacity: 0;
+        transform: rotate(0.01turn) translate(-1500px, -16px);
     }
-    80% {
-        transform: rotate(0.01turn) translateX(0px) translateY(-10px);
+    65% {
+        opacity: 1;
+        transform: rotate(0.01turn) translate(0px, -16px);
     }
-    85% {
-        transform: skewX(-20deg)
+    70% {
+        transform: rotate(0.01turn) translate(7px, -16px) skewX(-40deg);
     }
-    86% {
-        transform: skewX(-20deg)
+    95% {
+        transform: rotate(0.01turn) translate(7px, -16px) skewX(-40deg);
     }
     100% {
-        transform: rotate(0turn) translateX(0px) translateY(0px) skewX(0deg, 0deg);
+        transform: rotate(0turn) translate(0px, 0px) skewX(0deg);
+    }
+}
+
+.swoop p:last-of-type {
+    opacity: 0;
+    animation: fade 1.7s ease 2.3s 1 forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
