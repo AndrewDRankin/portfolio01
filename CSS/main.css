@@ -17,10 +17,6 @@ header {
     margin: 20px;
 }
 
-section {
-    padding: 5%;
-}
-
 .textBackground {
     color: white;
     text-align: center;
@@ -31,6 +27,7 @@ section {
 }
 
 .tiles {
+    padding: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,11 +41,43 @@ section {
     /* transition: all .8s ease-in-out .2s; */
 }
 
+.tiles div img:hover {
+    transform: scale(1.1);
+    filter: contrast(35%); */
+    overflow: hidden;
+    /* /* figcaption{ */
+        /* display: contents; */
+    }
+}
+
 .skills div {
     padding: 20px;
+}
+
+.lessMarginTop {
+    margin-top: -10px;
 }
 
 img {
     width: 100%;
     transition: all .8s ease-in-out .2s;
 }
+
+figure {
+    position: relative;
+    width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 800;
+    opacity: 0
+}
+
+/* figcaption:hover {
+    opacity: 1;
+    transform: scale(0.5);
+} */
