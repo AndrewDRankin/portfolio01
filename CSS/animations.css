@@ -1,0 +1,110 @@
+.tiles {
+    animation: reveal 2.25s ease 1;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+        width: 80%;
+    }
+    20% {
+        opacity: 0;
+    }
+    70% {
+        margin-top: 0px;
+        width: 90%;
+    }
+    100% {
+        opacity: 1;
+        width: 90%;
+    }
+}body {
+    animation-name: onload;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes onload {
+    0% {
+        background-color: rgb(160, 45, 50);
+    }
+    25% {
+        background-color: rgb(25, 70, 70);
+    }
+    100% {
+        background-color: rgb(12, 30, 35);
+    }
+}
+
+.swoop p:first-of-type{
+    animation: swoop 2s ease 1;
+}
+
+@keyframes swoop {
+    0% {
+        opacity: 0;
+        transform: rotate(0.01turn) translateX(-200px);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0turn) translateX(0px);
+    }
+}
+
+.swoop p:last-of-type{
+    opacity: 0;
+    animation: fade 1.7s ease 2.3s 1 forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.skills {
+    /* margin-top: 50px; */
+    opacity: 0;
+    animation: skills 1.7s ease 2.3s 1 forwards;
+}
+
+@keyframes skills {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.textPulse {
+    animation: pulse .5s linear 4.2s 1 forwards;
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 0;
+    }
+    10% {
+        text-shadow: 0 0 4px white;
+    }
+    100% {
+        text-shadow: 0 0 0;
+    }
+}

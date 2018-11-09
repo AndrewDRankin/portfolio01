@@ -1,15 +1,44 @@
 @media only screen and (min-width: 375px){
-
+    
     .tiles div {
-        width: 45%;
-        transition: all .8s ease-in-out .2s;
+        width: 48%;
+        /* transition: all .8s ease-in-out .2s; */
+    }
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 @media only screen and (min-width: 800px){
 
     .tiles div {
-        width: 20%;
-        transition: all .8s ease-in-out .2s;
+        width: 24%;
+        /* margin: 20px; */
+        /* transition: all .8s ease-in-out .2s; */
+    }
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
