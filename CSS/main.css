@@ -26,8 +26,15 @@ header {
     padding: 20px 0;
 }
 
+.border {
+    border-top: rgb(220, 220, 220) 2px solid;
+    margin: 0 15%;
+    transform: scaleX(0);
+}
+
 .tiles {
     padding: 5%;
+    margin-bottom: -15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,11 +50,15 @@ header {
 
 .tiles div img:hover {
     transform: scale(1.1);
-    filter: contrast(35%); */
+    filter: contrast(35%);
     overflow: hidden;
-    /* /* figcaption{ */
+    /* figcaption{ */
         /* display: contents; */
-    }
+    /* } */
+}
+
+.skills {
+    margin-top: 15px;
 }
 
 .skills div {
@@ -60,7 +71,7 @@ header {
 
 img {
     width: 100%;
-    transition: all .8s ease-in-out .2s;
+    transition: all .2s ease-in-out .1s;
 }
 
 figure {
@@ -69,6 +80,7 @@ figure {
 }
 
 figcaption {
+    display: none;
     position: absolute;
     top: 15%;
     text-align: center;

@@ -108,3 +108,21 @@
         text-shadow: 0 0 0;
     }
 }
+
+.border {
+    animation: separator 1.7s ease 2.3s 1 forwards;
+}
+
+@keyframes separator {
+    0% {
+        transform: scaleX(0);
+        /* box-shadow: 0 0 0px rgb(220, 220, 220); */
+    }
+    /* 10% {
+        box-shadow: 0 0 60px rgb(255, 255, 255);
+    } */
+    100% {
+        transform: scaleX(1);
+        /* box-shadow: 0 0 1px rgb(220, 220, 220); */
+    }
+}
