@@ -19,7 +19,9 @@
         opacity: 1;
         width: 90%;
     }
-}body {
+}
+
+body {
     animation-name: onload;
     animation-duration: 3.5s;
     animation-timing-function: ease-in-out;
@@ -126,3 +128,18 @@
         /* box-shadow: 0 0 1px rgb(220, 220, 220); */
     }
 }
+
+/* .tiles:hover {
+    animation: glow 1s ease;
+}
+
+@keyframes glow {
+    0% {
+        background-color: rgb(12, 30, 35);
+    }
+
+    100% {
+        background-color: rgb(32, 50, 55);
+        transition: all 1s ease .1s;    
+    }
+} */

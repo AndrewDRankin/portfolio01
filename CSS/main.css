@@ -40,6 +40,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    font-weight: 800;
 }
 
 .tiles div {
@@ -62,18 +63,32 @@ header {
 
 img {
     width: 100%;
-    opacity: .7;
+    opacity: .85;
     transition: all .2s ease-in-out .1s;
 }
 
 figure {
     position: relative;
+    z-index: 1;
     width: 100%;
+    color: black;
+    /* text-align: center; */
+    transition: all 1s ease .1s;
 }
 
-figure p {
-    position: absolute;
+.projects {
     opacity: 1;
+    text-decoration: none;
+    color: white;
+}
+
+.titles {
+    position: absolute;
+    top: 0;
+    padding: 5%;
+    font-size: 100%;
+    color: white;
+    transition: all 1s ease .1s;
 }
 
 /* figcaption {
@@ -88,21 +103,24 @@ figure p {
 
 figcaption {
     position: absolute;
+    z-index: 2;
     opacity: 0;
     top: 0px;
     width: 0%;
     height: 100%;
+    padding: 5%;
     backface-visibility: hidden;
     transform: scale(.1);
+    transition: all 1s ease .1s;
 }
 
 figure:hover figcaption {
     opacity: 1;
-    /* position: relative; */
-    top: 200px;
+    top: 170px;
     background-color: rgb(160, 45, 50);
-    height: 50%;
-    width: 100%;
+    height: 100px;
+    width: 90%;
+    transform: scale(1);
     transition: all 1s ease .1s;    
 }
 
@@ -111,7 +129,7 @@ figure:hover img {
     transition: all 1s ease 0s;   
 }
 
-figure:hover p {
+.projects:hover .titles {
     opacity: 0;
     transform: scale(4);
     transition: all 1s ease .1s;
