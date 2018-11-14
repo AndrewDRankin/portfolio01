@@ -48,7 +48,7 @@ header {
     display: block;
     margin-bottom: 15px;
     width:100%;
-    transition: all .4s ease;
+    /* transition: all .4s ease; */
 }
 
 .index1 {
@@ -83,8 +83,9 @@ img {
     width: 100%;
     opacity: .7;
     border-radius: 25% 25% 0 0;
-    transform: translateY(50%);
-    transition: all .2s ease-in-out .1s;
+    transform: translateY(60%);
+    transition: all .2s ease .1s;
+    /* transition: all .2s ease-in-out .1s; */
 }
 
 picture {
@@ -97,7 +98,7 @@ figure {
     width: 100%;
     color: black;
     /* border-radius: 10% / 50%; */
-    transition: all 1s ease .1s;
+    /* transition: all 1s ease .1s; */
 }
 
 .projects {
@@ -109,12 +110,12 @@ figure {
 .titles {
     position: absolute;
     top: 0;
-    padding: 10% 5%;
-    font-size: 170%;
+    padding: 5% 5%;
+    font-size: 160%;
     color: white;
     text-shadow: 0 0 40px black;
     text-align: center;
-    transition: all 1s ease .1s;
+    transition: all .5s ease .3s;
 }
 
 
@@ -124,24 +125,25 @@ figcaption ul {
     top: 0px;
     width: 0%;
     height: 100%;
-    padding: 5%;
+    padding: 4%;
     font-size: 12px;
     border-radius: 100% 100% 100% 100%;
     text-align: right;
     transform: scale(.1);
-    transition: all 1s ease .1s;
+    transition: all .7s ease .3s;
 }
 
 figure:hover figcaption ul {
     opacity: 1;
     top: 100%;
-    background-color: rgb(160, 45, 50);
+    right: 0%;
+    background-color: rgb(170, 55, 60);
     height: 115px;
-    width: 40%;
-    border-radius: 0 0 50% 10%;
+    width: 28%;
+    border-radius: 0 0 10% 50%;
     text-align: right;
     transform: scale(1);
-    transition: all .7s ease .6s;    
+    transition: all .6s ease 1.7s;    
 }
 
 figcaption p {
@@ -150,32 +152,33 @@ figcaption p {
     top: 0px;
     width: 0%;
     height: 100%;
-    padding: 5%;
-    font-size: 12px;
+    padding: 4%;
+    font-size: 14px;
+    color: rgb(255,255,255);
     border-radius: 100% 100% 100% 100%;
     transform: scale(.1);
-    transition: all 1s ease .1s;
+    transition: all .7s ease .3s;
 }
 
 figure:hover figcaption p {
     opacity: 1;
     top: 100%;
-    background-color: rgb(160, 45, 50);
+    background-color: rgb(25, 70, 70);
     height: 115px;
-    width: 40%;
+    width: 56%;
     border-radius: 0 0 50% 10%;
     transform: scale(1);
-    transition: all .7s ease .6s;    
+    transition: all .6s ease .4s;    
 }
 figure:hover img {
     opacity: 1;
     border-radius: 0 0 0 0;
     transform: translateY(0);
-    transition: all .2s ease;   
+    transition: all .3s ease .1s;   
 }
 
 .projects:hover .titles {
     opacity: 0;
     transform: scale(.5);
-    transition: all .6s ease .2s;
+    transition: all .3s ease;
 }

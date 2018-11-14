@@ -2,19 +2,20 @@
     
     .tiles div {
         width: 48%;
-        transition: all .4s ease;        
+        /* transition: all .4s ease;         */
     }
     .container {
         margin-left: 0;
         margin-right: 0;
-        transition: all .4s ease;
+        /* transition: all .4s ease; */
     }
     .titles {
-        font-size: 120%;
-        transition: all .4s ease;
+        font-size: 115%;
+        /* transition: all .4s ease; */
     }
-    /* figure:hover figcaption {
-        top: 99%; */
+    figcaption ul {
+        font-size: 8px;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -22,14 +23,18 @@
     .container {
         margin-left: 20px;
         margin-right: 20px;
-        transition: all .4s ease;
+        /* transition: all .4s ease; */
     }
     .titles {
-        font-size: 170%;
-        transition: all .4s ease;
+        font-size: 155%;
+        padding: 10% 5%;
+        /* transition: all .4s ease; */
     }
     figcaption {
         font-size: 16px;
+    }
+    figcaption ul {
+        font-size: 12px;
     }
 }
 
@@ -38,22 +43,26 @@
     .tiles div {
         width: 24%;
         /* margin: 20px; */
-        transition: all .4s ease;
+        /* transition: all .4s ease; */
     }
     .container {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
-        transition: all .4s ease;
+        /* transition: all .4s ease; */
     }
     .titles {
-        font-size: 135%;
+        font-size: 130%;
+        padding: 5% 5%;
         width: 90%;
-        transition: all .4s ease;
+        /* transition: all .4s ease; */
     }
     figcaption {
         font-size: 13px;
+    }
+    figcaption ul {
+        font-size: 9px;
     }
 }
 
@@ -64,9 +73,26 @@
         margin-right: 20px;
         padding-left: 10px;
         padding-right: 10px;
-        transition: all .4s ease;
+        /* transition: all .4s ease; */
+    }
+    .titles {
+        font-size: 130%;
+        padding: 10% 5%;
     }
     figcaption {
         font-size: 100%;
+    }
+    figcaption ul {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .titles {
+        font-size: 185%;
+    }
+    figcaption ul {
+        font-size: 15px;
     }
 }
