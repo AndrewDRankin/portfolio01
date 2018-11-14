@@ -23,9 +23,9 @@
 
 body {
     animation-name: onload;
-    animation-duration: 3.5s;
+    animation-duration: 3.7s;
     animation-timing-function: ease-in-out;
-    animation-delay: .2s;
+    animation-delay: .1s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -34,9 +34,12 @@ body {
 
 @keyframes onload {
     0% {
+        background-color: rgb(255,255,255);
+    }
+    15% {
         background-color: rgb(160, 45, 50);
     }
-    25% {
+    40% {
         background-color: rgb(25, 70, 70);
     }
     100% {
