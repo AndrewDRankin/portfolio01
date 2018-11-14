@@ -2,20 +2,19 @@
     
     .tiles div {
         width: 48%;
-        /* transition: all .8s ease-in-out .2s; */
-        transition: all 1s ease .1s;
+        transition: all .4s ease;        
     }
     .container {
         margin-left: 0;
         margin-right: 0;
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
     }
     .titles {
         font-size: 120%;
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
     }
-    figure:hover figcaption {
-        top: 99%;
+    /* figure:hover figcaption {
+        top: 99%; */
 }
 
 @media only screen and (min-width: 600px){
@@ -23,11 +22,14 @@
     .container {
         margin-left: 20px;
         margin-right: 20px;
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
     }
     .titles {
         font-size: 170%;
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
+    }
+    figcaption {
+        font-size: 16px;
     }
 }
 
@@ -36,19 +38,22 @@
     .tiles div {
         width: 24%;
         /* margin: 20px; */
-        /* transition: all .8s ease-in-out .2s; */
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
     }
     .container {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
     }
     .titles {
         font-size: 135%;
-        transition: all 1s ease .1s;
+        width: 90%;
+        transition: all .4s ease;
+    }
+    figcaption {
+        font-size: 13px;
     }
 }
 
@@ -59,6 +64,9 @@
         margin-right: 20px;
         padding-left: 10px;
         padding-right: 10px;
-        transition: all 1s ease .1s;
+        transition: all .4s ease;
+    }
+    figcaption {
+        font-size: 100%;
     }
 }

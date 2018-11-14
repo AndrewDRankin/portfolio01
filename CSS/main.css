@@ -47,7 +47,7 @@ header {
 .tiles div {
     margin-bottom: 15px;
     width:100%;
-    /* transition: all .8s ease-in-out .2s; */
+    transition: all .4s ease;
 }
 
 .index1 {
@@ -80,7 +80,7 @@ header {
 
 img {
     width: 100%;
-    opacity: .6;
+    opacity: .7;
     transition: all .5s ease-in-out .1s;
 }
 
@@ -104,20 +104,10 @@ figure {
     padding: 10% 5%;
     font-size: 170%;
     color: white;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 50px black;
     text-align: center;
     transition: all 1s ease .1s;
 }
-
-/* figcaption {
-    display: none;
-    position: absolute;
-    top: 15%;
-    text-align: center;
-    font-size: 6vw;
-    font-weight: 800;
-    opacity: 0
-} */
 
 figcaption {
     position: absolute;
@@ -126,6 +116,7 @@ figcaption {
     width: 0%;
     height: 100%;
     padding: 5%;
+    font-size: 13px;
     border-radius: 100% 100% 100% 100%;
     backface-visibility: hidden;
     transform: scale(.1);
@@ -152,5 +143,5 @@ figure:hover img {
 .projects:hover .titles {
     opacity: 0;
     transform: scale(.5);
-    transition: all .7s ease;
+    transition: all .6s ease;
 }
