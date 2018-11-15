@@ -148,43 +148,48 @@ body {
 } */
 
 .hand {
-    margin-top: 100px;
-    animation: wave 9s linear 6s infinite;
+    animation: wave 9s ease 3s infinite;
 }
 
 @keyframes wave {
     
     0% {
-        width: 100px;
+        transform: translate(0, 0);
+        width: 150px;
     }
     30% {
-        width: 100px;
+        transform: translate(0, 0);
+        width: 150px;
     }
     35% {
-        width: 120px;
+        transform: translate(0, -10px);
+        width: 180px;
     }
     40% {
-        transform: rotate(0deg) translate(0, 0);
+        transform: rotate(0deg) translate(0, -10px);
     }
     45% {
-        transform: rotate(30deg) translate(10px, -4px);
+        transform: rotate(30deg) translate(10px, -14px);
     }
     50% {
-        transform: rotate(0deg) translate(0, 0);
+        transform: rotate(0deg) translate(0, -10px);
     }
     55% {
-        transform: rotate(30deg) translate(10px, -4px);
+        transform: rotate(30deg) translate(10px, -14px);
     }
     60% {
-        transform: rotate(0deg) translate(0, 0);      
+        transform: rotate(0deg) translate(0, -10px);      
     }
     65% {
-        width: 120px;
+        transform: translate(0, -10px);
+        width: 180px;
     }
     70% {
-        width: 100px;
+        transform: translate(0, 0);
+        width: 150px;
     }
     100% {
-        width: 100px;
+        transform: translate(0, 0);
+        width: 150px;
     }
 }

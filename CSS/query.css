@@ -2,20 +2,14 @@
     
     .tiles div {
         width: 48%;
-        /* transition: all .4s ease;         */
     }
     .container {
         margin-left: 0;
         margin-right: 0;
-        /* transition: all .4s ease; */
     }
     .titles {
         font-size: 115%;
-        /* transition: all .4s ease; */
     }
-    /* figcaption ul {
-        
-    } */
     figure:hover figcaption ul {
         height: 65px;
         font-size: 8px;
@@ -24,6 +18,57 @@
         height: 100px;
         font-size: 9px;
     }
+    .contact {
+        margin-top: 25px;
+    }
+    .contact picture {
+        height: 130px;
+    }
+    .hand {
+        width: 100px;        
+        animation: wave 9s ease 6s infinite;
+    }
+    @keyframes wave {
+        0% {
+            transform: translate(0, 0);
+            width: 100px;
+        }
+        30% {
+            transform: translate(0, 0);
+            width: 100px;
+        }
+        35% {
+            transform: translate(0, -10px);
+            width: 120px;
+        }
+        40% {
+            transform: rotate(0deg) translate(0, -10px);
+        }
+        45% {
+            transform: rotate(30deg) translate(10px, -14px);
+        }
+        50% {
+            transform: rotate(0deg) translate(0, -10px);
+        }
+        55% {
+            transform: rotate(30deg) translate(10px, -14px);
+        }
+        60% {
+            transform: rotate(0deg) translate(0, -10px);      
+        }
+        65% {
+            transform: translate(0, -10px);
+            width: 120px;
+        }
+        70% {
+            transform: translate(0, 0);
+            width: 100px;
+        }
+        100% {
+            transform: translate(0, 0);
+            width: 100px;
+        }
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -31,12 +76,10 @@
     .container {
         margin-left: 20px;
         margin-right: 20px;
-        /* transition: all .4s ease; */
     }
     .titles {
         font-size: 155%;
         padding: 10% 5%;
-        /* transition: all .4s ease; */
     }
     figcaption {
         font-size: 16px;
@@ -49,27 +92,26 @@
         height: 110px;
         font-size: 12px;
     }
+    .contact {
+        margin-top: 60px;
+    }
 }
 
 @media only screen and (min-width: 800px){
 
     .tiles div {
         width: 24%;
-        /* margin: 20px; */
-        /* transition: all .4s ease; */
     }
     .container {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
-        /* transition: all .4s ease; */
     }
     .titles {
         font-size: 130%;
         padding: 5% 5%;
         width: 90%;
-        /* transition: all .4s ease; */
     }
     figcaption {
         font-size: 13px;
@@ -82,6 +124,9 @@
         height: 105px;
         font-size: 10px;
     }
+    .contact {
+        margin-top: 70px;
+    }
 }
 
 @media only screen and (min-width: 1000px){
@@ -91,7 +136,6 @@
         margin-right: 20px;
         padding-left: 10px;
         padding-right: 10px;
-        /* transition: all .4s ease; */
     }
     .titles {
         font-size: 130%;
@@ -105,6 +149,9 @@
     }
     figure:hover figcaption p {
         font-size: 11px;
+    }
+    .contact {
+        margin-top: 80px;
     }
 }
 

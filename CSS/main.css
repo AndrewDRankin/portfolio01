@@ -67,11 +67,11 @@ header {
     z-index: 5;
 }
 
-.skills {
-    margin-top: 15px;
+.contact {
+    margin-top: 0;
 }
 
-.skills div {
+.contact div {
     padding: 20px;
 }
 
@@ -103,6 +103,9 @@ figure {
 
 .projects {
     opacity: 1;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -186,7 +189,13 @@ figure:hover .previews {
     transition: all .3s ease;
 }
 
+.contact picture {
+    display: inline-block;
+    height: 170px;
+    width: 200px;
+}
+
 .hand {
-    /* transform: scale(.3); */
-    width: 100px;
+    padding: 10px;
+    width: 150px;
 }
