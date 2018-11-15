@@ -79,7 +79,7 @@ header {
     margin-top: -10px;
 }
 
-img {
+.previews {
     width: 100%;
     opacity: .7;
     border-radius: 25% 25% 0 0;
@@ -123,10 +123,12 @@ figcaption ul {
     position: absolute;
     opacity: 0;
     top: 0px;
+    right: 0%;
     width: 0%;
     height: 100%;
     padding: 4%;
     font-size: 12px;
+    text-shadow: 0 0 1px rgb(200, 85, 90);
     border-radius: 100% 100% 100% 100%;
     text-align: right;
     transform: scale(.1);
@@ -135,12 +137,12 @@ figcaption ul {
 
 figure:hover figcaption ul {
     opacity: 1;
-    top: 100%;
+    top: 102%;
     right: 0%;
     background-color: rgb(170, 55, 60);
-    height: 115px;
-    width: 28%;
-    border-radius: 0 0 10% 50%;
+    height: 100px;
+    width: 21%;
+    border-radius: 0 0 10% 45%;
     text-align: right;
     transform: scale(1);
     transition: all .6s ease 1.7s;    
@@ -150,30 +152,31 @@ figcaption p {
     position: absolute;
     opacity: 0;
     top: 0px;
-    width: 0%;
+    right: 60%;
+    width: 63%;
     height: 100%;
     padding: 4%;
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(255,255,255);
-    border-radius: 100% 100% 100% 100%;
+    border-radius: 45% 45% 45% 45%;
     transform: scale(.1);
     transition: all .7s ease .3s;
 }
 
 figure:hover figcaption p {
     opacity: 1;
-    top: 100%;
+    top: 102%;
+    right: 29%;    
     background-color: rgb(25, 70, 70);
     height: 115px;
-    width: 56%;
-    border-radius: 0 0 50% 10%;
+    border-radius: 0 0 45% 10%;
     transform: scale(1);
     transition: all .6s ease .4s;    
 }
-figure:hover img {
+figure:hover .previews {
     opacity: 1;
-    border-radius: 0 0 0 0;
-    transform: translateY(0);
+    /* border-radius: 0 0 0 0; */
+    transform: translateY(3%);
     transition: all .3s ease .1s;   
 }
 
@@ -181,4 +184,9 @@ figure:hover img {
     opacity: 0;
     transform: scale(.5);
     transition: all .3s ease;
+}
+
+.hand {
+    /* transform: scale(.3); */
+    width: 100px;
 }

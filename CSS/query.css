@@ -13,8 +13,16 @@
         font-size: 115%;
         /* transition: all .4s ease; */
     }
-    figcaption ul {
+    /* figcaption ul {
+        
+    } */
+    figure:hover figcaption ul {
+        height: 65px;
         font-size: 8px;
+    }
+    figure:hover figcaption p {
+        height: 100px;
+        font-size: 9px;
     }
 }
 
@@ -33,7 +41,12 @@
     figcaption {
         font-size: 16px;
     }
-    figcaption ul {
+    figure:hover figcaption ul {    
+        height: 95px;
+        font-size: 12px;
+    }
+    figure:hover figcaption p {
+        height: 110px;
         font-size: 12px;
     }
 }
@@ -61,8 +74,13 @@
     figcaption {
         font-size: 13px;
     }
-    figcaption ul {
-        font-size: 9px;
+    figure:hover figcaption ul {    
+        height: 90px;
+        font-size: 10px;
+    }
+    figure:hover figcaption p {
+        height: 105px;
+        font-size: 10px;
     }
 }
 
@@ -82,7 +100,10 @@
     figcaption {
         font-size: 100%;
     }
-    figcaption ul {
+    figure:hover figcaption ul {    
+        font-size: 11px;
+    }
+    figure:hover figcaption p {
         font-size: 11px;
     }
 }
@@ -92,7 +113,12 @@
     .titles {
         font-size: 185%;
     }
-    figcaption ul {
-        font-size: 15px;
+    figure:hover figcaption ul {    
+        height: 130px;
+        font-size: 16px;
+    }
+    figure:hover figcaption p {
+        height: 145px;
+        font-size: 16px;
     }
 }
