@@ -125,7 +125,7 @@
         font-size: 10px;
     }
     .contact {
-        margin-top: 70px;
+        margin-top: 60px;
     }
 }
 
@@ -150,9 +150,6 @@
     figure:hover figcaption p {
         font-size: 11px;
     }
-    .contact {
-        margin-top: 80px;
-    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -167,5 +164,8 @@
     figure:hover figcaption p {
         height: 145px;
         font-size: 16px;
+    }
+    .contact {
+        margin-top: 80px;
     }
 }

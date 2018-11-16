@@ -54,15 +54,19 @@ header {
 .index1 {
     z-index: 1;
 }
+
 .index2 {
     z-index: 2;
 }
+
 .index3 {
     z-index: 3;
 }
+
 .index4 {
     z-index: 4;
 }
+
 .index5 {
     z-index: 5;
 }
@@ -85,7 +89,6 @@ header {
     border-radius: 25% 25% 0 0;
     transform: translateY(60%);
     transition: all .2s ease .1s;
-    /* transition: all .2s ease-in-out .1s; */
 }
 
 picture {
@@ -97,8 +100,6 @@ figure {
     position: relative;
     width: 100%;
     color: black;
-    /* border-radius: 10% / 50%; */
-    /* transition: all 1s ease .1s; */
 }
 
 .projects {
@@ -108,6 +109,10 @@ figure {
 a {
     text-decoration: none;
     color: white;
+}
+
+a:focus {
+    outline: none;
 }
 
 .titles {
@@ -120,7 +125,6 @@ a {
     text-align: center;
     transition: all .5s ease .3s;
 }
-
 
 figcaption ul {
     position: absolute;
@@ -176,9 +180,9 @@ figure:hover figcaption p {
     transform: scale(1);
     transition: all .6s ease .4s;    
 }
+
 figure:hover .previews {
     opacity: 1;
-    /* border-radius: 0 0 0 0; */
     transform: translateY(3%);
     transition: all .3s ease .1s;   
 }

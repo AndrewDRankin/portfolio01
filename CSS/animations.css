@@ -1,23 +1,13 @@
 .tiles {
-    animation: reveal 2.25s ease 1;
+    animation: reveal 2.7s ease 1;
 }
 
 @keyframes reveal {
     0% {
         opacity: 0;
-        /* margin-top: -20px; */
-        /* width: 80%; */
-    }
-    20% {
-        opacity: 0;
-    }
-    70% {
-        /* margin-top: 0px; */
-        /* width: 90%; */
     }
     100% {
         opacity: 1;
-        /* width: 90%; */
     }
 }
 
@@ -81,13 +71,12 @@ body {
     }
 }
 
-.skills {
-    /* margin-top: 50px; */
+.contact {
     opacity: 0;
-    animation: skills 1.7s ease 2.3s 1 forwards;
+    animation: contact 1.7s ease 2.3s 1 forwards;
 }
 
-@keyframes skills {
+@keyframes contact {
     0% {
         opacity: 0;
         transform: translateY(30px);
@@ -121,31 +110,11 @@ body {
 @keyframes separator {
     0% {
         transform: scaleX(0);
-        /* box-shadow: 0 0 0px rgb(220, 220, 220); */
     }
-    /* 10% {
-        box-shadow: 0 0 60px rgb(255, 255, 255);
-    } */
     100% {
         transform: scaleX(1);
-        /* box-shadow: 0 0 1px rgb(220, 220, 220); */
     }
 }
-
-/* .tiles:hover {
-    animation: glow 1s ease;
-}
-
-@keyframes glow {
-    0% {
-        background-color: rgb(12, 30, 35);
-    }
-
-    100% {
-        background-color: rgb(32, 50, 55);
-        transition: all 1s ease .1s;    
-    }
-} */
 
 .hand {
     animation: wave 9s ease 3s infinite;
