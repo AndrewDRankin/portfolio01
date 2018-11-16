@@ -48,11 +48,6 @@ header {
     display: block;
     margin-bottom: 15px;
     width:100%;
-    /* transition: all .4s ease; */
-}
-
-.index1 {
-    z-index: 1;
 }
 
 .index2 {
